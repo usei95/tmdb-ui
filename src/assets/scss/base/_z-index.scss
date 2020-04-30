@@ -1,0 +1,5 @@
+@each $space in $spaceamounts {
+  .z-#{$space}{
+    z-index: #{$space};
+  }
+}
