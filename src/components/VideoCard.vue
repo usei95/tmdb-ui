@@ -2,15 +2,13 @@
   <div class="video-card" @click="showPreviewModal">
     <img :src="thumbnailImageUrl" class="video-card__thumbnail" />
     <modal :visible.sync="isPreviewModalVisible">
-      <div>
-        <iframe
-          type="text/html"
-          width="640"
-          height="360"
-          :src="videoSourceUrl"
-          frameborder="0"
-        ></iframe>
-      </div>
+      <iframe
+        type="text/html"
+        width="640"
+        height="360"
+        :src="videoSourceUrl"
+        frameborder="0"
+      ></iframe>
     </modal>
   </div>
 </template>
