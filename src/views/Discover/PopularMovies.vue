@@ -13,8 +13,8 @@ export default {
   components: {
     PosterCarousel
   },
-  async created() {
-    await this.$store.dispatch(FETCH_POPULAR_MOVIES);
+  created() {
+    this.$store.dispatch(FETCH_POPULAR_MOVIES);
   },
   computed: {
     ...mapState({
